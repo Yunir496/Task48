@@ -24,5 +24,10 @@ Description case: ${myCase.description}
 <br>
 <br>
 Priority case: ${myCase.priority}
+<br>
+<br>
+Email caseholder: ${myCase.email}
+<br>
+<br>
 </body>
 </html>

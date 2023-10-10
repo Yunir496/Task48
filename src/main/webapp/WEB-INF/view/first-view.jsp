@@ -15,11 +15,13 @@
 <h2>Hello freind!</h2>
 <br>
 <br>
-<form:form action="todo/info" modelAttribute="myCase">
+<form:form action="info" modelAttribute="myCase">
     name <form:input path="name"/>
+    <form:errors path="name"/>
     <br>
     <br>
     decription <form:input path="description"/>
+    <form:errors path="description"/>
     <br>
     <br>
     priority <form:select path="priority">
@@ -29,8 +31,15 @@
 </form:select>
     <br>
     <br>
+    email<form:input path="email"/>
+    <form:errors path="email"/>
+    <br>
+    <br>
     <input style="margin-left: 90px" type="submit">
 </form:form>
+
+</body>
+</html>
 <%--<form action="todo/info" method="get">--%>
 <%--    <input required type="text" name="todoName" placeholder="Введите название дела">--%>
 <%--    <br>--%>
@@ -40,5 +49,3 @@
 <%--    <br>--%>
 <%--    <input style="margin-left: 100px" type="submit">--%>
 <%--</form>--%>
-</body>
-</html>
